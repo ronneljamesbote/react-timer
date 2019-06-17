@@ -1,0 +1,30 @@
+.control {
+  -webkit-tap-highlight-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 230%;
+  opacity: 0.8;
+  padding: 1.3rem;
+  padding-top: 1rem;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &:first-of-type {
+    padding-left: 5rem;
+  }
+
+  &:last-of-type {
+    padding-right: 5rem;
+  }
+
+  svg {
+    color: #fff;
+  }
+}

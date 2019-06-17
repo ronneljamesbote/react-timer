@@ -1,0 +1,10 @@
+.timerCountdown {
+  color: #26cbf5;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+
+  &.danger {
+    color: #fe5c5c;
+  }
+}
