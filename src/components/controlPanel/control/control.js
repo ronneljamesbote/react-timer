@@ -1,12 +1,22 @@
+import PropTypes from "prop-types";
 import React from "react";
 import styles from "./styles.module.scss";
 
-function control({ children, className = "", onClick, ...restProps }) {
+control.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string
+};
+
+control.defaultProps = {
+  className: ""
+};
+
+function control({ children, className, ...restProps }) {
   const classes = [styles.control, className];
 
   return (
-    <button className={classes.join(" ")} onClick={onClick} {...restProps}>
-      {children || "Control"}
+    <button className={classes.join(" ")} {...restProps}>
+      {children}
     </button>
   );
 }
